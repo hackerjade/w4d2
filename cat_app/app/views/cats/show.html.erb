@@ -1,0 +1,33 @@
+<h1><%= @cat.name.capitalize %>'s Profile </h1>
+
+<table>
+  <tr>
+    <th> name </th>
+    <td> <%= @cat.name %> </td>
+  </tr>
+
+  <tr>
+    <th> birth date </th>
+    <td> <%= @cat.birthday %> </td>
+  </tr>
+
+  <tr>
+    <th> age </th>
+    <td> <%= @cat.age %> </td>
+  </tr>
+
+  <tr>
+    <th> sex </th>
+    <td> <%= @cat.sex %> </td>
+  </tr>
+
+  <tr>
+    <th> color </th>
+    <td> <%= @cat.color ? @cat.color : "Not specified" %> </td>
+  </tr>
+
+  <tr>
+    <th> description </th>
+    <td> <%= @cat.description ? @cat.description : "Not specified" %> </td>
+  </tr>
+</table>

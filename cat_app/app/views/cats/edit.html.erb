@@ -1,0 +1,5 @@
+<h1> Edit cat!</h1>
+
+<%= render "form", form_action: cat_url(@cat.id),
+            form_value: "patch",
+            submit_button_value: "Save edit" %>
